@@ -1,7 +1,8 @@
 name: recaptcha
-description: A new Flutter project.
+description: This google reCaptcha for android and ios
 version: 0.0.1
-homepage:
+authors: ["Jayesh Shinde<shindejayesharun@gmail.com>"]
+homepage: https://github.com/shindejayesharun/reCaptcha.git
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
