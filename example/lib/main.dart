@@ -54,7 +54,16 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Running on: $_platformVersion\n'),
+              TextButton(onPressed: ()async{
+              String response = await Recaptcha.reCaptcha("6Lfe-Y0eAAAAAIMLF_kGRihyHLQuS_5opvaewu1a");
+              print("captcha ${response}");
+              }, child: Text("reCaptcha"))
+            ],
+          ),
         ),
       ),
     );
